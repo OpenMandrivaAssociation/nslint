@@ -9,6 +9,7 @@ Source: ftp://ftp.ee.lbl.gov/%{name}-%{version}.tar.bz2
 Patch: %{name}-owner.patch
 License: BSD
 Group: Networking/Other
+BuildRoot: %{_tmppath}/%{name}-%{version}-root
 
 %description
 Perform consistency checks on DNS files.

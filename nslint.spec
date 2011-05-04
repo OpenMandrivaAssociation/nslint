@@ -4,7 +4,7 @@
 Summary: A DNS lint checker
 Name: %{name}
 Version: %{version}
-Release: %mkrel 7
+Release: %mkrel 8
 Source: ftp://ftp.ee.lbl.gov/%{name}-%{version}.tar.bz2
 Patch: %{name}-owner.patch
 License: BSD

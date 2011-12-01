@@ -23,13 +23,13 @@ Perform consistency checks on DNS files.
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir} \
-	$RPM_BUILD_ROOT%{_mandir}/man8
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_bindir} \
+	%{buildroot}%{_mandir}/man8
 %makeinstall_std install-man
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)

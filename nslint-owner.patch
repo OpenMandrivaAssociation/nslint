@@ -1,0 +1,15 @@
+--- nslint-2.0.1/Makefile.in.orig	Wed Jul 23 02:22:58 1997
++++ nslint-2.0.1/Makefile.in	Fri Sep  1 22:08:07 2000
+@@ -87,10 +87,10 @@
+ 	sed -e 's/.*/char version[] = "&";/' $(srcdir)/VERSION > $@
+ 
+ install: force
+-	$(INSTALL) -m 555 -o bin -g bin $(PROG) $(DESTDIR)$(BINDEST)/$(PROG)
++	$(INSTALL) -m 555 $(PROG) $(DESTDIR)$(BINDEST)/$(PROG)
+ 
+ install-man: force
+-	$(INSTALL) -m 444 -o bin -g bin $(srcdir)/$(PROG).8 \
++	$(INSTALL) -m 444 $(srcdir)/$(PROG).8 \
+ 	    $(DESTDIR)$(MANDEST)/man8/$(PROG).8
+ 
+ clean: force

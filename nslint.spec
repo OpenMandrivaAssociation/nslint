@@ -1,7 +1,7 @@
 Summary:	A DNS lint checker
 Name:		nslint
 Version:	2.1a6
-Release:	19
+Release:	20
 License:	BSD
 Group:		Networking/Other
 Source0:	ftp://ftp.ee.lbl.gov/%{name}-%{version}.tar.bz2
